@@ -78,6 +78,27 @@
             <button>Submit</button>
         </section>
     </main>
+    <section class="oracle">
+  <h2>Whisper to the Muse</h2>
+  <input type="text" id="themeInput" placeholder="Type a theme (e.g., grief, madness)">
+  <button onclick="summonPoem()">Summon</button>
+  <p id="poemDisplay"></p>
+</section>
+
+<script>
+function summonPoem() {
+    const theme = document.getElementById("themeInput").value;
+    fetch('/generate', {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify({ theme })
+    })
+    .then(res => res.json())
+    .then(data => {
+        document.getElementById("poemDisplay").textContent = data.poem;
+    });
+}
+</script>
 
     <footer>
         <p>&copy; 2025 The Silent Verse Society</p>
