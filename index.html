@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>The Silent Verse Society</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>The Silent Verse Society</h1>
+        <p class="tagline">Words for those who never spoke aloud</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#gallery">Verse Vault</a></li>
+            <li><a href="#quotes">Lunatic’s Ink</a></li>
+            <li><a href="#summon">Conjure A Poem</a></li>
+            <li><a href="#comment">Stand on the Desk</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="gallery">
+            <h2>Gallery of Grief</h2>
+            <div class="poem-frame">
+                <h3>Of Ink and Shade</h3>
+                <p class="poem">
+                    When mirth did pale and men wore borrowed skin,<br>
+                    I stitched my soul in parchment thin,<br>
+                    Where hearts, unheeded, whispered low—<br>
+                    The only truth was written woe.
+                </p>
+            </div>
+            <div class="poem-frame">
+                <h3>Where My Sorrows Dwell</h3>
+                <p class="poem">
+                    When all did feign, and hearts took flight,<br>
+                    The silence grew in deeper night,<br>
+                    And there within the shadow’s hem,<br>
+                    My pen became my diadem.
+                </p>
+            </div>
+            <div class="poem-frame">
+                <h3>Hollow Throne</h3>
+                <p class="poem">
+                    I crowned the ache, I ruled the rain,<br>
+                    I wrote in blood the weight of pain,<br>
+                    The verse alone could ever know<br>
+                    The madness I refused to show.
+                </p>
+            </div>
+        </section>
+
+        <section id="quotes">
+            <h2>Lunatic’s Ink</h2>
+            <blockquote>
+                “I would sooner drown in the abyss of madness than love again—yet am I not already lost?
+                For what sane soul bleeds ink into verse and calls the wound a poem?”
+            </blockquote>
+            <blockquote>
+                “To write is to betray the silence with a scream too beautiful to be heard.”
+            </blockquote>
+        </section>
+
+        <section id="summon">
+            <h2>Conjure A Poem</h2>
+            <input type="text" id="promptInput" placeholder="Type a word or feeling..." />
+            <button onclick="summonPoem()">Summon</button>
+            <p id="poemResult" class="poem-summon"></p>
+        </section>
+
+        <section id="comment">
+            <h2>Stand on the Desk</h2>
+            <textarea placeholder="Write a whisper to the world..."></textarea>
+            <button>Submit</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 The Silent Verse Society</p>
+    </footer>
+</body>
+</html>
