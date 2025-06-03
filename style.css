@@ -1,0 +1,113 @@
+body {
+    background: #f7f2e7;
+    font-family: 'Garamond', serif;
+    color: #2c2c2c;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #1e1e1e;
+    color: #fdf6e3;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.tagline {
+    font-style: italic;
+    font-size: 1.2em;
+}
+
+nav ul {
+    list-style: none;
+    background: #333;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    color: #fdf6e3;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    display: block;
+    transition: background 0.3s ease;
+}
+
+nav ul li a:hover {
+    background: #555;
+}
+
+main {
+    padding: 2rem;
+}
+
+h2 {
+    font-variant: small-caps;
+    border-bottom: 2px dashed #999;
+    padding-bottom: 0.5rem;
+}
+
+.poem-frame {
+    border: 1px solid #999;
+    padding: 1rem;
+    margin: 1rem 0;
+    background: #fffdf7;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease;
+}
+
+.poem-frame:hover {
+    transform: scale(1.02);
+}
+
+.poem {
+    font-style: italic;
+    line-height: 1.8;
+}
+
+blockquote {
+    margin: 1rem;
+    padding: 1rem;
+    background: #f2ece2;
+    border-left: 5px solid #888;
+    font-style: italic;
+}
+
+input[type="text"], textarea {
+    width: 100%;
+    padding: 1rem;
+    margin-top: 0.5rem;
+    font-family: 'Garamond', serif;
+    font-size: 1em;
+    background: #fffaf0;
+    border: 1px solid #aaa;
+}
+
+button {
+    padding: 0.8rem 2rem;
+    margin-top: 1rem;
+    font-family: 'Garamond', serif;
+    background: #1e1e1e;
+    color: #fdf6e3;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #444;
+}
+
+footer {
+    background: #1e1e1e;
+    color: #fdf6e3;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
